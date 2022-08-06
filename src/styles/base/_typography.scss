@@ -1,0 +1,7 @@
+@import "~@/styles/settings";
+
+h1 {
+  font-family: $base-font-family;
+  font-size: $text-4xl;
+  font-variation-settings: "wght" $font-bold;
+}

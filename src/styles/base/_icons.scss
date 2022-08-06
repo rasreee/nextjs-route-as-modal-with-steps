@@ -1,0 +1,24 @@
+@import "~@/styles/settings";
+
+svg {
+  width: auto;
+  height: 1.25em;
+  color: inherit;
+}
+
+.circle-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: $rounded-full;
+  background: $muted;
+  color: $text;
+}
+
+.circle-icon svg {
+  width: auto;
+  height: 1rem;
+  margin: auto;
+}

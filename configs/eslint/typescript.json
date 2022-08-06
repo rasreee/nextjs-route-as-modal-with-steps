@@ -1,0 +1,85 @@
+{
+  "$schema": "http://json.schemastore.org/eslintrc",
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "plugin:import/typescript",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking"
+  ],
+  "plugins": ["@typescript-eslint"],
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2021": true
+  },
+  "rules": {
+    "@typescript-eslint/no-unsafe-call": "off",
+    "@typescript-eslint/no-unsafe-argument": "off",
+    "@typescript-eslint/no-floating-promises": "off",
+    "@typescript-eslint/no-unsafe-assignment": "off",
+    "@typescript-eslint/no-empty-interface": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "require-await": "off",
+    "@typescript-eslint/require-await": "error",
+    "no-return-await": "off",
+    "@typescript-eslint/return-await": ["error", "always"],
+    "no-throw-literal": "off",
+    "@typescript-eslint/no-throw-literal": "error",
+    "no-void": [
+      "error",
+      {
+        "allowAsStatement": true
+      }
+    ],
+    "@typescript-eslint/no-unsafe-member-access": "off",
+    "@typescript-eslint/member-ordering": "off",
+    "@typescript-eslint/no-type-alias": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-restricted-imports": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/ban-types": "off",
+    "@typescript-eslint/prefer-readonly-parameter-types": "off",
+    "@typescript-eslint/no-magic-numbers": "off",
+    "@typescript-eslint/explicit-member-accessibility": "off",
+    "@typescript-eslint/consistent-type-imports": [
+      "error",
+      {
+        "prefer": "type-imports"
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["*.d.ts"],
+      "rules": {
+        "no-var": "off"
+      }
+    },
+    {
+      "files": ["**/*.config.js"],
+      "rules": {
+        "@typescript-eslint/no-var-requires": "off"
+      }
+    },
+    {
+      "files": ["*.spec.ts", "*.spec.tsx"],
+      "rules": {
+        "@typescript-eslint/no-shadow": [
+          "error",
+          {
+            "builtinGlobals": true,
+            "allow": [
+              "defaultStatus",
+              "event",
+              "find",
+              "length",
+              "name",
+              "status",
+              "screen"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+.zoom-in {
+  cursor: zoom-in !important;
+}
+.zoom-out {
+  cursor: zoom-out !important;
+}
+
+.page-section {
+  @apply w-full px-9 py-5;
+}

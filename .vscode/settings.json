@@ -1,0 +1,54 @@
+{
+  "css.validate": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  "editor.formatOnSave": true,
+  "eslint.run": "onType",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+  "javascript.suggest.paths": true,
+  "less.validate": false,
+  "scss.validate": false,
+  "typescript.suggest.paths": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#452fbd",
+    "activityBar.activeBorder": "#1a0906",
+    "activityBar.background": "#452fbd",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#1a0906",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "sash.hoverBorder": "#452fbd",
+    "statusBar.background": "#362594",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#452fbd",
+    "statusBarItem.remoteBackground": "#362594",
+    "statusBarItem.remoteForeground": "#e7e7e7",
+    "titleBar.activeBackground": "#362594",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#36259499",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "peacock.color": "#362594",
+  "files.exclude": {
+    "**/.git": false,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    ".eslintcache": true
+  }
+}

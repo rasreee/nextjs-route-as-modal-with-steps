@@ -1,0 +1,23 @@
+{
+  "recommendations": [
+    "aaron-bond.better-comments",
+    "dbaeumer.vscode-eslint",
+    "firsttris.vscode-jest-runner",
+    "meganrogge.template-string-converter",
+    "mgmcdermott.vscode-language-babel",
+    "mscolnick.export-typescript",
+    "pflannery.vscode-versionlens",
+    "styled-components.vscode-styled-components",
+    "stylelint.vscode-stylelint",
+    "syler.sass-indented",
+    "yatki.vscode-surround",
+    "alfredbirk.tailwind-documentation",
+    "bradlc.vscode-tailwindcss",
+    "sudoaugustin.tailpile",
+    "austenc.tailwind-docs",
+    "clinyong.vscode-css-modules",
+    "voorjaar.windicss-intellisense",
+    "navin-moorthy.vscode-css-snippets"
+  ],
+  "unwantedRecommendations": ["esbenp.prettier-vscode"]
+}

@@ -1,0 +1,56 @@
+@import "~@/styles/settings";
+
+button {
+  @apply h-12;
+}
+
+button:disabled {
+  background: $muted;
+  color: $text-hint;
+  cursor: default;
+}
+
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+.primary-button {
+  @apply px-5 py-0;
+  border-radius: $rounded-md;
+  font-weight: $font-semibold;
+  line-height: $leading-none;
+  background: $primary;
+  color: #fff;
+}
+
+.primary-button:not(:disabled):hover {
+  background: $primary-dark;
+}
+
+.primary-button:not(:disabled):active {
+  background: $primary-darkest;
+}
+
+.icon-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  color: $text;
+  opacity: 0.6;
+}
+
+.icon-button:hover {
+  opacity: 0.85;
+}
+
+.icon-button:active {
+  opacity: 1;
+}
+
+.icon-button > svg {
+  width: auto;
+  height: 18px;
+}

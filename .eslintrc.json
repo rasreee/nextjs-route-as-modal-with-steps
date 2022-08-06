@@ -1,0 +1,49 @@
+{
+  "extends": [
+    "next",
+    "next/core-web-vitals",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "plugins": ["simple-import-sort", "unused-imports", "prettier"],
+  "rules": {
+    "prettier/prettier": "error",
+    "no-console": "warn",
+    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars": [
+      "warn",
+      {
+        "args": "after-used",
+        "argsIgnorePattern": "^_",
+        "vars": "all",
+        "varsIgnorePattern": "^_"
+      }
+    ],
+    "import/no-anonymous-default-export": "off",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error"
+  },
+  "overrides": [
+    {
+      "files": ["**/*.config.js"],
+      "rules": {
+        "@typescript-eslint/no-var-requires": "off"
+      }
+    },
+    {
+      "files": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"],
+      "extends": ["./configs/eslint/typescript.json"],
+      "parserOptions": {
+        "project": "./tsconfig.eslint.json"
+      },
+      "rules": {
+        "@typescript-eslint/no-unsafe-return": "off"
+      }
+    },
+    {
+      "files": ["**/*.tsx", "**/*.jsx"],
+      "extends": ["./configs/eslint/react"]
+    }
+  ],
+  "ignorePatterns": ["next-env.d.ts"]
+}

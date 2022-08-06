@@ -1,0 +1,27 @@
+@import "~@/styles/settings";
+
+html {
+  scroll-smooth: smooth;
+}
+
+html,
+body {
+  color: $text;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+html,
+body,
+#__next {
+  height: 100%;
+  min-height: 100%;
+}
+
+body,
+#__next {
+  background-color: $background;
+  isolation: isolate; // Create a new stacking context without needing to set a z-index
+  position: relative;
+}

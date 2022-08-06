@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+  font-family: system-ui, sans-serif;
+  text-rendering: optimizelegibility;
+  touch-action: manipulation;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+/**
+ * Create a new stacking context without needing to set a z-index
+ */
+.root {
+  isolation: isolate;
+}
+
+/**
+ * Sensible media defaults
+ * 
+ * (This rule will prevent that image from growing beyond its container)
+ */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/**
+ * Inherit fonts for form controls
+ */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/**
+ * Word wrapping
+ */
+body,
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre {
+  overflow-wrap: break-word;
+}
+
+/**
+ * List elements
+ */
+li,
+ol {
+  list-style: none;
+}
